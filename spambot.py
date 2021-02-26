@@ -19,6 +19,7 @@ def spam_spamtext():
     for word in spamtext_file:
         pyautogui.typewrite(word)
         pyautogui.press("enter")
+        time.sleep(0.5)
 
 
 def repeat_text():
@@ -35,6 +36,7 @@ def repeat_text():
 
     for i in range(0, int(times_to_repeat)):
         pyautogui.typewrite(msg_to_repeat + '\n')
+        time.sleep(0.7)
 
 
 while True:
